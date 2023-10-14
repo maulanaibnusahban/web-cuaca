@@ -60,7 +60,9 @@ button.addEventListener("click", function () {
       // Ganti gambar sesuai dengan kondisi cuaca
       if (data.current.condition.text == "Clear") {
         gambar.src = "image/cerah.png";
-      } else if ((data.current.condition.text == "Patchy rain possible") | (data.current.condition.text == "Overcast")) {
+      } else if (data.current.condition.text == "Patchy rain possible") {
+        gambar.src = "image/cerah-gerimis.png";
+      } else if (data.current.condition.text == "Overcast") {
         gambar.src = "image/berawan.png";
       } else if (data.current.condition.text == "Partly cloudy") {
         gambar.src = "image/cerah-berawan.png";
